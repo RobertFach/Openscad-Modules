@@ -58,8 +58,26 @@ To work with the example you'll have to do the following:
   - Finally, open this folder in Openscad and compile the example.
 
 ## Complex Example
+In the following we will highlight several different use-cases and workflows.
+
 ### Prepare a new project
+Also it's not required, we recommend to put the code under version control, e.g., in a git repository. Now, we can describe the project `Simple-Case` by placing a `package.json` file inside the project root. This file describes the project and all it's dependencies. More details can be found in the Node.js and NPM.js documentation:
+  - ![NPM.js package.json](https://docs.npmjs.com/files/package.json)
+  - ![NPM.js package.json - Getting started Guide](https://docs.npmjs.com/getting-started/using-a-package.json)
+
+Create the `package.json` file with the following contents.
+```json
+{
+  "name": "Simple-Case",
+  "description": "This project creates a simple case.",
+  "version": "0.0.1"
+}
+```
 ### Find a module
+Our project goal is to create a simple case/housing. So lets find out if we can reuse some existing openscad module to simplify the development. ... to be written :)
+
+```npm --registry=https://registry.openscad-modules.tk search <features>```
+
 ### Add a module as a dependency
 ### Build the complex example
 
