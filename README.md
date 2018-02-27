@@ -29,15 +29,40 @@ By the time of writing, Node.js (and its package manager npm) is available for t
 Just follow the [official guide](https://docs.npmjs.com/getting-started/installing-node) and [download link](https://nodejs.org/en/download/) to download the node package manager and it's runtime Node.js. 
 
 ### Configure NPM to use the openscad-modules registry.
-All you have to do is to inform NPM about the openscad-modules registry. This can be done in the following ways:
-  - Modify the NPM configuration in the way that it points to the openscad-modules registry. This is useful if you don't use any Node.js packages.
-    * npm config set registry https://registry.openscad-modules.tk
+All you have to do is to inform NPM about the openscad-modules registry. This can be done in one of the following ways:
+  - Modify the NPM configuration in the way that it points to the openscad-modules registry. This is useful if you don't use npm for Node.js development.
+    
+    ```npm config set registry https://registry.openscad-modules.tk```
+    
   - Use the registry on demand per package manager call.
-    * npm --registry=https://registry.openscad-modules.tk install <package>
+    
+    ```npm --registry=https://registry.openscad-modules.tk install <package>```
   
 ### Try it out
-Clone this repository and run npm install to see how it works.
-  - git clone https://github.com/RobertFach/Openscad-Modules
-  - cd Openscad-Modules
-  - npm install
-Now Open this folder in Openscad and compile the example.
+In this example, we will show howto use a module from the openscad registry. The project layout is as follows:
+  - A main project scad file `rounded_case.scad`, which used the rounded cube module. This module will be installed by the package manager.
+  - A `package.json` file, this file describes the main project and its dependencies.
+ 
+To work with the example you'll have to do the following:
+  - Clone this github repository to get the main project and package.json file.
+  
+    ```git clone https://github.com/RobertFach/Openscad-Modules```
+    
+  - Change into the Openscad-Modules folder.
+  
+    ```cd Openscad-Modules```
+  - Run the package manager to get the required dependencies.
+  
+    ```npm --registry=https://registry.openscad-modules.tk install```
+    
+  - Finally, open this folder in Openscad and compile the example.
+
+## Complex Example
+### Prepare a new project
+### Find a module
+### Add a module as a dependency
+### Build the complex example
+
+## Creating your own modules
+
+## Working with modules hosted on github
