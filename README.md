@@ -1,7 +1,7 @@
-# Openscad-Modules
-This is the wiki and issue tracker for the Openscad Modules Registry.
+# OpenSCAD-Modules
+This is the wiki and issue tracker for the OpenSCAD Modules Registry.
 
-Openscad-Modules is a package manager for Openscad. It's powered by NPM, the package manager of the Node.js project and a registry dedicated for Openscad-Modules itself. 
+OpenSCAD-Modules is a package manager for OpenSCAD. It's powered by NPM, the package manager of the Node.js project and a registry dedicated for Openscad-Modules itself. 
 The aim of an openscad package manager is to have a tooling which handles dependencies among multiple projects. With NPM we achieve the following goals:
   - one of the best package managers for free :)
   - easy to use, large community, stable and well established
