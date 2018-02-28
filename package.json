@@ -1,0 +1,8 @@
+{
+  "name": "Example-Project",
+  "description": "This project uses fractals module as a dependency",
+  "version": "0.0.1",
+  "dependencies": {
+    "fractals": "1.0.0"
+  }
+}
