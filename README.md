@@ -40,8 +40,8 @@ All you have to do is to inform NPM about the openscad-modules registry. This ca
   
 ### Try it out
 In this example, we will show howto use a module from the openscad registry. The project layout is as follows:
-  - A main project scad file `rounded_case.scad`, which used the rounded cube module. This module will be installed by the package manager.
-  - A `package.json` file, this file describes the main project and its dependencies.
+  - A main project scad file `Example-Project.scad` which uses a ![fractal surface module](https://github.com/RobertFach/openscad-fractals). This module is a dependency described in the `package.json` file and will be installed by the package manager.
+  - A `package.json` file, this file describes the main project and the dependencies.
  
 To work with the example you'll have to do the following:
   - Clone this github repository to get the main project and package.json file.
@@ -55,9 +55,11 @@ To work with the example you'll have to do the following:
   
     ```npm --registry=https://registry.openscad-modules.tk install```
     
-  - Finally, open this folder in Openscad and compile the example.
+  - Finally, open `Example-Project.scad` in Openscad and compile the example.
 
 ## Complex Example
+The following sections are not yet complete!
+
 In the following we will highlight several different use-cases and workflows.
 
 ### Prepare a new project
@@ -76,7 +78,7 @@ Create the `package.json` file with the following contents.
 ### Find a module
 Our project goal is to create a simple case/housing. So lets find out if we can reuse some existing openscad module to simplify the development. ... to be written :)
 
-```npm --registry=https://registry.openscad-modules.tk search <features>```
+```npm --registry=https://registry.openscad-modules.tk search fractal```
 
 ### Add a module as a dependency
 ### Build the complex example
