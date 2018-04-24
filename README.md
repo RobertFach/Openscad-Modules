@@ -55,7 +55,7 @@ To work with the example you'll have to do the following:
   
     ```npm --registry=https://registry.openscad-modules.tk install```
     
-  - Finally, open `Example-Project.scad` in Openscad and compile the example.
+  - Finally, open with `OPENSCADPATH=modules openscad Example-Project.scad` in Openscad and compile the example.
 
 ## Complex Example
 The following sections are not yet complete!
